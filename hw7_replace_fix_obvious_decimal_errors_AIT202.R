@@ -9,9 +9,9 @@ for (i in 1:dim(df)[1]) {
 			df$AIT202[i] <- df$AIT202[i] /10
 		}
 	}
-	if( !is.na(df$AIT202[i]) && df$AIT202[i] < 8)
+	if( !is.na(df$AIT202[i]) && df$AIT202[i] < 1)
 	{
-		while((df$AIT202[i] < 8))
+		while((df$AIT202[i] < 1))
 		{
 			df$AIT202[i] <- df$AIT202[i] *10
 		}
